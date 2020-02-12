@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/foodmenustyles.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <title>Lift Coffee Shop</title>
+</head>
+
+<body>
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/myscripts.js"></script>
+    <script type="text/javascript" src="scripts/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Candal|Courgette|Staatliches|Oleo+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">\
+
+    <div id="navbar" class="z-depth-5">
+
+        <div id="navlist">
+            <div id="header">
+                <span>Lift Coffee Shop & Cafe</span>
+                <br>
+                <p>218 WEST BROAD ST RICHMOND, VA 23220</p>
+
+
+            </div>
+
+            <div id="contact-hours">
+                <p><b>CALL US:</b> (804) 344-LIFT</p>
+                <p><b>MON-FRI:</b> 7AM-7PM • <b>SAT:</b> 7AM-8PM • <b>SUN:</b> 8AM-7PM</p>
+            </div>
+
+            <div id="logo-contain"><img onclick='fadePageOut("index.html")' src="images/logo.png"></div>
+
+
+        </div>
+    </div>
+
+    <div id="menu-container">
+
+        <div class="menu-header z-depth-5" id="breakfast-header">
+            <h1 onclick="showBreakfast()">Breakfast<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item breakfast-items ">
+                <li class="collection-item">Egg & Cheese - 4.5</li>
+                <li class="collection-item">Sausage, Egg & Cheese - 5</li>
+                <li class="collection-item">Bacon, Egg & Cheese - 5</li>
+                <li class="collection-item">Ham, Egg & Cheese - 5</li>
+                <li class="collection-item">Feta, Spinach, Provolone & Egg - 5.25</li>
+                <li class="collection-item">Spinach, Swiss, Bacon & Egg - 5.25</li>
+                <li class="collection-item">SPICY Sausage, Egg & Cheddar - 6<br><br><i>w/ Jalapeño Mayo & hot sauce</i></li>
+            </ul>
+        </div>
+
+        <div class="menu-header z-depth-5 " id="bagel-header">
+            <h1 onclick="showBagels()">Bagels<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item bagel-items">
+                <li class="collection-item">w/ Cream Cheese or Hummus - 4 <br><br><i> Plain, Artichoke Romano, Jalapeño, Veggie, Honey Almond</i></li>
+                <li class="collection-item">w/ Works - 4<br><br><i>cream cheese or hummus w/ field greens, red onion & tomato</i></li>
+                <li class="collection-item">w/ Lox - 10<br><br><i>works w/ smoked salmon & capers</i></li>
+            </ul>
+        </div>
+
+
+        <div class="menu-header z-depth-5" id="odds-header">
+            <h1 onclick="showOdds()">Odds 'n' Ends<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item odd-items">
+                <li class="collection-item">Grilled Muffin - 3.5 <br><br><i>w/ butter</i></li>
+                <li class="collection-item">Strawberry & Brie Croissant - 5</li>
+                <li class="collection-item">Yogrt Parfait - 6<br><br><i> w/ strawberries, blueberries, banana & granola</i></li>
+            </ul>
+
+        </div>
+
+        <div class="menu-header z-depth-5" id="oatmeal-header">
+            <h1 onclick="showOatmeal()">Oatmeal<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item oatmeal-items">
+                <li class="collection-item">Plain - 4<br><br><i>w/ brown sugar</i></li>
+                <li class="collection-item">Fancy - 5<br><br><i>w/ Craksk s, apples & brown sugar</i></li>
+            </ul>
+        </div>
+
+
+        <div class="menu-header z-depth-5" id="panini-header">
+            <h1 onclick="showPanini()">Paninis<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item panini-items">
+                <li class="collection-item">Funny Honey - 9<br><br><i>brie, apple slices, honey, spinach & egg</i></li>
+                <li class="collection-item">Veggie - 9<br><br><i>feta, provolone, spinach, roasted red peppers w/ sundried tomato mayo</i></li>
+                <li class="collection-item">The Banana - 7.5<br><br><i>peanut butter, & bananas drizzled with honey</i></li>
+                <li class="collection-item">Two Cheese - 7.5<br><br><i>loaded w/ cheddar & swiss & our own little twist</i></li>
+                <li class="collection-item">Turkey Bacon - 9<br><br><i>smoked turkey, cheddar & bacon w/ chipotle mayo</i></li>
+                <li class="collection-item">Turkey, Apple & Brie - 10<br><br><i>smoked turkey & brie w/ granny smith apples & balsamic drizzle</i></li>
+                <li class="collection-item">Grilled Roast Beef & Cheddar - 10<br><br><i>are roast beef, sharp cheddar, red onion & Dijon sauce, topped w/ tomato & greens</i></li>
+                <li class="collection-item">Chicken Pesto - 10<br><br><i>diced chicken mixed w/ basil pesto, topped w/ provolone & spinach</i></li>
+                <li class="collection-item">Balsamic Chicken - 10<br><br><i>balsamic vinaigrette based chicken salad w/ red onion, feta & cucumbers. Topped with provolone & spinach</i></li>
+            </ul>
+        </div>
+
+        <div class="menu-header z-depth-5" id="sandwich-header">
+            <h1 onclick="showSandwich()">Sandwiches<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item sandwich-items">
+                <li class="collection-item">Jalapeño Grilled Cheese - 7.5<br><br><i>w/ cheddar, red onion & jalapeño mayo </i></li>
+                <li class="collection-item">Apple, Turkey & Cheddar - 9<br><br><i>smoked turkey & cheddar w/ granny smith apples & mayo</i></li>
+                <li class="collection-item">Southwest Turkey - 9<br><br><i>smoked turkey, jalapeño mayo, tomato, red onion & greens</i></li>
+                <li class="collection-item">Ham, Apple & Swiss - 9<br><br><i>baked ham, swiss cheese, granny smith apples, greens & dijon sauce</i></li>
+                <li class="collection-item">Chicken Salad - 9<br><br><i>w/ granny smith apples & red grapes, topped w/ greens</i></li>
+                <li class="collection-item">Roast Beef & Swiss - 10<br><br><i>rare roast beef, swiss & chipotle mayo, topped w/ greens & tomato</i></li>
+                <li class="collection-item">Tuna Salad - 9<br><br><i>white albacore w/ celery & green onion, topped w/ cucumber & greens</i></li>
+                <li class="collection-item">Tuna Melt - 9<br><br><i>our tuna salad grilled with cheddar</i></li>
+                <li class="collection-item">Hummus Veggie*** - 9<br><br><i>hummus, feta, cucumber, red onion, tomato & greens w/ balsamic drizzle</i></li>
+            </ul>
+        </div>
+
+        <div class="menu-header z-depth-5" id="salad-header">
+            <h1 onclick="showSalad()">Salads<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item salad-items">
+                <li class="collection-item">Balsamic Chicken Chopped Salad - 10<br><br><i>field greens tossed with our balsamic chicken salad topped w/ tomato & tossed in balsamic vinaigrette</i></li>
+                <li class="collection-item">Apple Chicken Chopped Salad - 10<br><br><i>field greens with granny smith apples, red grapes & sliced almonds, tossed with our homemade chicken salad & chipotle dressing</i></li>
+                <li class="collection-item">Smoked Turkey & Roasted Red Pepper Salad - 10<br><br><i>field greens tossed in a chipotle dressing with smoked turkey, sharp cheddar, bacon & roasted red peppers</i></li>
+                <li class="collection-item">House Salad - 8<br><br><i>field greens w/ roasted red peppers, red onion, cucumber and almonds</i></li>
+            </ul>
+        </div>
+
+        <div class="menu-header z-depth-5" id="soup-header">
+            <h1 onclick="showSoup()">Soup<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item soup-items">
+                <li class="collection-item">Soup du Jour* - 5<br><br><i>12 oz bowl</i></li>
+                <li class="collection-item">Soup & Any Half Sandwich - 9</li>
+                <li class="collection-item">Half Sandwich or Panini - 5.5<br><br><i>served w/ a side</i></li>
+
+            </ul>
+        </div>
+
+        <div class="menu-header z-depth-5" id="sides">
+            <h1 onclick="showSide()">Sides<i class="material-icons">keyboard_arrow_right</i></h1>
+            <ul class="collection menu-item side-items">
+                <li class="collection-item">pasta salad </li>
+                <li class="collection-item">side of greens </li>
+                <li class="collection-item">fruit salad*</li>
+                <li class="collection-item">yogurt & granola</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+</body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/homestyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
+
+    <title>Lift Coffee Shop</title>
+  </head>
+  <body>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/myscripts.js"></script>
+    <script type="text/javascript" src="scripts/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Candal|Courgette|Staatliches|Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <div id="navbar" class="z-depth-5">
+      <div id="navlist">
+        <div id="header">
+          <span>Lift Coffee Shop & Cafe</span>
+          <br />
+          <p>218 WEST BROAD ST RICHMOND, VA 23220</p>
+        </div>
+
+        <div id="contact-hours">
+          <p><b>CALL US:</b> (804) 344-LIFT</p>
+          <p>
+            <b>MON-FRI:</b> 7AM-7PM • <b>SAT:</b> 7AM-8PM • <b>SUN:</b> 8AM-7PM
+          </p>
+        </div>
+
+        <div id="logo-contain"><img src="images/logo.png" /></div>
+      </div>
+    </div>
+
+    <div id="about" class="z-depth-5">
+      <h4>Need a LIFT?</h4>
+      <p>
+        Serving the heart of Richmond's Art District with locally roasted
+        organic and fairly traded coffees, bagels, & breakfast sandwiches.
+        Everything is fresh and made to order!
+      </p>
+    </div>
+
+    <br /><br />
+
+    <div id="content">
+      <div class="card-contain" onclick="openCoffeeModal()">
+        <div class="text-container" >
+          <h1 class="card-text">Coffee To Go</h1>
+        </div>
+        <div class="darken"></div>
+        <div id="coffee" class="card"></div>
+      </div>
+
+      <div class="card-contain" onclick="fadePageOut('foodmenu.html')">
+        <div class="text-container">
+          <h1 class="card-text">Food Menu</h1>
+        </div>
+        <div class="darken"></div>
+        <div id="food" class="card"></div>
+      </div>
+
+      <div
+        class="card-contain"
+        onclick="fadePageOut('https://www.google.com/maps/place/Lift+Coffee+Shop/@37.5472946,-77.4461355,17z/data=!3m1!4b1!4m5!3m4!1s0x89b1113b8fb7e0ab:0x154db54311153408!8m2!3d37.5472946!4d-77.4439468')"
+      >
+        <div class="text-container">
+          <h1 class="card-text">Location</h1>
+        </div>
+        <div class="darken"></div>
+        <div id="hours" class="card"></div>
+      </div>
+    </div>
+
+    <br />
+
+    <div id="catering-button" class="z-depth-5" onclick="openCaterModal()">
+      <h1>we cater</h1>
+    </div>
+    <br /><br />
+  </body>
+</html>

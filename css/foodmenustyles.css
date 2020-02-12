@@ -1,0 +1,136 @@
+html,
+body {
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #eee;
+}
+
+#navbar {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 9.25em;
+    float: left;
+    background-color: #403831;
+}
+
+#logo-contain {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#header {
+    color: #CFE099;
+    font-size: 40px;
+    font-family: 'Oleo Script';
+    margin-left: 40px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+#header > p {
+    font-family: Verdana;
+    color: white;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+#contact-hours {
+    color: white;
+    margin-left: 70%;
+    margin-top: 20px;
+    position: absolute;
+    text-align: right;
+}
+
+#contact-hours > p > b {
+    color: #CFE099;
+}
+
+@media (max-width: 1200px) {
+
+    #header {
+        visibility: hidden;
+    }
+
+    #contact-hours {
+        visibility: hidden;
+    }
+}
+
+#menu-container {
+    margin: 0 5%;
+    width: 100%;
+    position: relative;
+    margin-top: 11em;
+}
+
+.collapsible-body {
+    padding: 0px;
+    background-color: #FFF !important;
+}
+
+.menu-header {
+    text-align: left;
+    width: 90%;
+    height: 100px;
+    transition: width .4s ease-in-out;
+}
+
+.menu-header > h1 {
+    font-family: 'Staatliches';
+    color: black;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    transition: background .2s ease-in-out !important;
+    transition: color .2s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-header > h1:hover {
+    background-color: #403831;
+    color: #CFE099;
+}
+
+.menu-header > ul {
+    visibility: hidden;
+}
+
+h1 > i {
+    font-size: 60px !important;
+    border: 0px;
+}
+
+h1 > p {
+    font-size: 60px;
+    color: #DDD;
+    margin-top: 0px;
+}
+
+
+.menu-item {
+    text-align: center;
+    background: transparent;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Staatliches';
+    top: -135%;
+    left: 120%;
+    width: 110%;
+}
+
+.menu-item > li {
+    padding: 25px !important;
+}
+
+.menu-item > li > i {
+    font-family: Verdana !important;
+    font-size: 18px;
+}
